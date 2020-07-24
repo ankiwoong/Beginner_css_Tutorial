@@ -31,3 +31,12 @@ li.special, span.special {
     color: orange;
     font-weight: bold;
   }
+
+/* Styling things based on their location in a document */
+li em {
+    color: rebeccapurple;
+  }
+
+h1 + p {
+    font-size: 200%;
+  }

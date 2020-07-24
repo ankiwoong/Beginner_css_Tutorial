@@ -11,3 +11,8 @@ p {
 p, li {
     color: green;
 }
+
+/* Changing the default behavior of elements */
+li {
+    list-style-type: none;
+  }

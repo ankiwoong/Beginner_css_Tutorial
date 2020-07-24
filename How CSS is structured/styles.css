@@ -12,3 +12,12 @@ p {
 p {
     color: red;
   }
+
+/* Specificity */
+.special {
+    color: red;
+  }
+  
+p {
+    color: blue;
+  }

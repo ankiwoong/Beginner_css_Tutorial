@@ -1,0 +1,17 @@
+/* ch1. CSS syntax */
+
+/* One rule css */
+h1 {
+    color: red;
+    font-size: 5em;
+}
+
+/* Multiple rules css */
+h1 {
+    color: red;
+    font-size: 5em;
+}
+
+p {
+    color: black;
+}

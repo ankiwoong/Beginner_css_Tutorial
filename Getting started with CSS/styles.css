@@ -40,3 +40,16 @@ li em {
 h1 + p {
     font-size: 200%;
   }
+
+/* Styling things based on state */
+a:link {
+    color: pink;
+  }
+  
+a:visited {
+    color: green;
+  }
+
+a:hover {
+    text-decoration: none;
+  }

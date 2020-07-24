@@ -3,7 +3,6 @@ h1 {
   }
 
 /* Styling HTML elements */
-
 p {
     color: green;
   }
@@ -15,4 +14,20 @@ p, li {
 /* Changing the default behavior of elements */
 li {
     list-style-type: none;
+  }
+
+/* Adding a class */
+.special {
+    color: orange;
+    font-weight: bold;
+  }
+
+li.special {
+    color: orange;
+    font-weight: bold;
+  }
+
+li.special, span.special {
+    color: orange;
+    font-weight: bold;
   }

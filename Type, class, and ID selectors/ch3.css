@@ -1,0 +1,5 @@
+article :first-child {
+}
+
+article *:first-child {
+}

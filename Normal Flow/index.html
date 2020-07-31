@@ -1,33 +1,52 @@
-<style>
-    body {
-        width: 500px;
-        margin: 0 auto;
-    }
+<!DOCTYPE html>
+<html>
 
-    p {
-        background: rgba(255, 84, 104, 0.3);
-        border: 2px solid rgb(255, 84, 104);
-        padding: 10px;
-        margin: 10px;
-    }
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox align 0 — starting code</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
 
-    span {
-        background: white;
-        border: 1px solid black;
-    }
-</style>
+        body {
+            width: 70%;
+            max-width: 960px;
+            margin: 20px auto;
+        }
 
-<h1>Basic document flow</h1>
+        button {
+            font-size: 18px;
+            line-height: 1.5;
+            width: 15%;
+        }
 
-<p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
+        div {
+            height: 100px;
+            border: 1px solid black;
+        }
 
-<p>By default we span 100% of the width of our parent element, and we are as tall as our child content. Our total width
-    and height is our content + padding + border width/height.</p>
+        /* Add your flexbox CSS below here */
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
 
-<p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our margins,
-    not both.</p>
+        button:first-child {
+            align-self: flex-end;
+        }
+    </style>
+</head>
 
-<p>inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another, and
-    adjacent text nodes, if there is space on the same line. Overflowing inline elements will <span>wrap onto a new line
-        if possible (like this one containing text)</span>, or just go on to a new line if not, much like this image
-    will do: <img src="https://mdn.mozillademos.org/files/13360/long.jpg"></p>
+<body>
+    <div>
+        <button>Smile</button>
+        <button>Laugh</button>
+        <button>Wink</button>
+        <button>Shrug</button>
+        <button>Blush</button>
+    </div>
+</body>
+
+</html>

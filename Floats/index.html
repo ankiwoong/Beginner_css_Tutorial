@@ -11,6 +11,12 @@
             font: .9em/1.2 Arial, Helvetica, sans-serif
         }
 
+        .wrapper {
+            background-color: rgb(79, 185, 227);
+            padding: 10px;
+            color: #fff;
+        }
+
         .box {
             float: left;
             margin: 15px;
@@ -20,27 +26,18 @@
             background-color: rgb(207, 232, 220);
             padding: 1em;
         }
-
-        .special {
-            background-color: rgb(79, 185, 227);
-            padding: 10px;
-            color: #fff;
-        }
-
-        .cleared {
-            clear: left;
-        }
     </style>
     <title>My test page</title>
 </head>
 
 <body>
     <h1>Simple float example</h1>
+    <div class="wrapper">
+        <div class="box">Float</div>
 
-    <div class="box">Float</div>
-
-    <p class="special">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia
-        lorem placerat vulputate. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem
+            placerat vulputate. </p>
+    </div>
 
     <p class="cleared">Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at
         ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet

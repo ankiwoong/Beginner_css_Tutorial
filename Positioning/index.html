@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Static positioning</title>
+    <title>Positioning context</title>
 
     <style>
         body {
             width: 500px;
             margin: 0 auto;
+            position: relative;
         }
 
         p {
@@ -29,23 +30,16 @@
             top: 30px;
             left: 30px;
         }
-
-        /* .positioned {
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        } */
     </style>
 </head>
 
 <body>
-    <h1>Static positioning</h1>
+    <h1>Positioning context</h1>
 
     <p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
 
-    <p class="positioned">By default we span 100% of the width of our parent element, and our are as tall as our child
-        content. Our total width and height is our content + padding + border width/height.</p>
+    <p class="positioned">Now I'm absolutely positioned relative to the <code>&lt;body&gt;</code> element, not the
+        <code>&lt;html&gt;</code> element!</p>
 
     <p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our
         margins, not both.</p>

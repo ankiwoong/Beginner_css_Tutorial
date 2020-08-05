@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>A fixed width layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A simple float-based responsive design</title>
     <style>
         body {
             font: 1.2em Helvetica, Arial, sans-serif;
@@ -13,20 +14,25 @@
         }
 
         .wrapper {
-            width: 960px;
+            max-width: 960px;
             margin: 2em auto;
         }
 
-        .col1 {
-            width: 300px;
-            float: left;
+        .col1,
+        .col2 {
             background-color: #fff;
         }
 
-        .col2 {
-            width: 620px;
-            float: right;
-            background-color: #fff;
+        @media screen and (min-width: 600px) {
+            .col1 {
+                width: 31.24999999%;
+                float: left;
+            }
+
+            .col2 {
+                width: 64.58333331%;
+                float: right;
+            }
         }
     </style>
 </head>
@@ -35,7 +41,7 @@
 
     <div class="wrapper">
         <div class="col1">
-            <p>This layout is fixed width. See what happens if you make the browser window narrow.</p>
+            <p>This layout is responsive. See what happens if you make the browser window wider or narrow.</p>
         </div>
         <div class="col2">
             <p>One November night in the year 1782, so the story runs, two brothers sat over their winter fire in the

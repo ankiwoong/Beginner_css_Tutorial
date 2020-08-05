@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>A simple flexbox-based responsive design</title>
+    <title>A simple grid-based responsive design</title>
     <style>
         body {
             font: 1.2em Helvetica, Arial, sans-serif;
@@ -24,16 +24,9 @@
 
         @media screen and (min-width: 600px) {
             .wrapper {
-                display: flex;
-            }
-
-            .col1 {
-                flex: 1;
-                margin-right: 5%;
-            }
-
-            .col2 {
-                flex: 2;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                column-gap: 5%;
             }
         }
     </style>

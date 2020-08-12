@@ -69,3 +69,10 @@ nav {
   float: left;
   margin: 0 20px 20px 0;
 }
+
+/* The <article> and <aside> elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower. */
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+}

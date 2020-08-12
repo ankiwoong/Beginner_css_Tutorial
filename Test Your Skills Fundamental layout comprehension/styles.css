@@ -63,3 +63,9 @@ nav {
   top: 0;
   position: sticky;
 }
+
+/* The image that is inside the article should have text wrapped around it. */
+.feature {
+  float: left;
+  margin: 0 20px 20px 0;
+}
